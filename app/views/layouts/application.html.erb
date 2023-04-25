@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Newapp</title>
+    <title>Scheduled Tweets</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -16,6 +16,7 @@
   <body>
   <%=render partial: "shared/navbar" %>
   <div class="container">
+    <%= render partial: "shared/flash" %>
     <%= yield %>
   </div>
   </body>
