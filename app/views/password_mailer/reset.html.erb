@@ -6,4 +6,4 @@ Someone has requested a reset of your password.
 
 If this was you, click the link below to reset your password. The link will automatically expire in 15 minutes.
 
-<%=link_to "Reset password", password_reset_edit_url %>
+<%=link_to "Reset password", password_reset_edit_url(token: @token) %>
